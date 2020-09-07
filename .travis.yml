@@ -5,11 +5,11 @@ env:
    #   via the "travis encrypt" command using the project repo's public key
    - secure: "g3xXUOWUgHydxF1U3ZiQ0fobiS1k8FB6EtkDsrS91IwMY1loPjd8SQ2dFE3EKUh0hNqlCbMWA9yGr687yxhbqkGxhnzETIE7xu1fpSCgsXXdhR7dyuxxBhMcI784xnTDjcfX0PdRc1tlQuGtS2zjXoTqjKiqXtnwo07Ft+4giDLuIaV9H/PSCGBbGr169RDDfkBU8oI8wgnHQ9e3qRbSmietlY1Le17tEQnnPD3DYc+JsIfwVsV1FYjxzMGXHIL/PjtHKI6ddSnRUfyfqYuEFgVc0o/HvEQSV+CCQd4zAo3KrpKcdLXMwCfWEekH1+8UpHhIg+GDp52m7pLF6NpueEOtUnOlAO3wryzyRptyhwHyOJLTMkAwk8MvINSlMuuZqkwtkyqsGFI9UFSLoJwwM7hDw/nPPDNd0BOcLbu5UrveZSXQWy7BYJhacnmEbmYRxcmLcmztuhqMB38uLfpwXE/+co5RAwNJvHw8zyG5n/G23cwsouExki+6BLHkyQWlt44RHtQ/wu294HjXBUNkmQ1TyqiIkcotIXDuK0hBTds1zzSCbmtP9h+mf1oqtlg4LB9cGRogav/p3QIycXpD7z6Wp3uxOMFSWrwXVOpGSSW9uSle9hXqln+aE4D85NW64y25DDU5GNh2p/8mDBbqsbAPcqytCQMJHZ2WxPMwDeg="
 
-before_install: gem install bundler --pre
+# before_install: gem install bundler --pre
 addons:
   coverity_scan:
     project:
-      name: "wangsongc/fastjson"
+      name: "wangsongc/jsonschema"
       description: "Build submitted via Travis CI"
     notification_email: wangsongc@foxmail.com
     build_command_prepend: "sudo apt-get update && sudo apt-get install -y libenchant-dev libxml2-dev libxslt-dev"
