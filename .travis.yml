@@ -12,6 +12,6 @@ addons:
       name: "wangsongc/jsonschema"
       description: "Build submitted via Travis CI"
     notification_email: wangsongc@foxmail.com
-    build_command_prepend: "python -m pip install -U pip setuptools && sudo apt-get update && sudo apt-get install -y libenchant-dev libxml2-dev libxslt-dev && python -m pip install tox"
+    build_command_prepend: "python -m pip install -U pip setuptools && pip install --upgrade pip && sudo apt-get update && sudo apt-get install -y libenchant-dev libxml2-dev libxslt-dev && python -m pip install tox"
     build_command: "python -m tox -e py36-noextra-build"
     branch_pattern: coverity
