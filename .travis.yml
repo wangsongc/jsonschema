@@ -15,5 +15,5 @@ addons:
       description: "Build submitted via Travis CI"
     notification_email: wangsongc@foxmail.com
     build_command_prepend: "python -m pip install -U pip setuptools && pip install --upgrade pip && sudo apt-get update && sudo apt-get install -y libenchant-dev libxml2-dev libxslt-dev && python -m pip install tox"
-    build_command: python -m tox -e "py38-noextra-build" && python -m tox -e "py38-noextra-tests"
+    build_command: python -m tox -e "py38-noextra-tests"
     branch_pattern: coverity
